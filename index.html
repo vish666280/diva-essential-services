@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diva Essential Services | Community Engagement Project</title>
+  <meta name="description" content="Essential public and community services documented in Diva, Thane.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar">
+  <a class="brand" href="#home">
+    <span class="brand-mark">D</span>
+    <span><strong>Diva Services</strong><small>Community Directory</small></span>
+  </a>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#survey">Field Survey</a>
+    <a href="#about">About</a>
+  </nav>
+</header>
+
+<main id="home">
+  <section class="hero">
+    <div class="hero-copy">
+      <span class="eyebrow">COMMUNITY ENGAGEMENT PROJECT · DIVA, THANE</span>
+      <h1>Essential services,<br><span>closer to the community.</span></h1>
+      <p>Explore important public, healthcare, education and community facilities documented during our field survey in Diva, Thane.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#services">Explore Services</a>
+        <a class="btn secondary" href="#survey">View Field Photos</a>
+      </div>
+      <div class="mini-stats">
+        <div><strong>9</strong><span>Facilities listed</span></div>
+        <div><strong>8</strong><span>Field photographs</span></div>
+        <div><strong>1</strong><span>Local directory</span></div>
+      </div>
+    </div>
+    <div class="hero-card">
+      <img src="assets/metro-hospital.png" alt="Metro Hospital and ICU in Diva">
+      <div class="hero-card-caption">
+        <span class="live-dot"></span>
+        <div><strong>Field Survey</strong><small>Diva, Thane, Maharashtra</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="toolbar" id="services">
+    <div><span class="section-kicker">DIRECTORY</span><h2>Essential Services in Diva</h2></div>
+    <div class="search-wrap"><span>⌕</span><input id="search" type="search" placeholder="Search hospital, school, police..."></div>
+  </section>
+
+  <div class="filters" role="tablist">
+    <button class="filter active" data-filter="all">All</button>
+    <button class="filter" data-filter="health">🏥 Healthcare</button>
+    <button class="filter" data-filter="police">👮 Police</button>
+    <button class="filter" data-filter="education">🏫 Education</button>
+    <button class="filter" data-filter="government">🏤 Government</button>
+    <button class="filter" data-filter="community">🌳 Community</button>
+  </div>
+
+  <section class="cards" id="serviceGrid">
+
+    <article class="service-card" data-category="health" data-search="shree siddhivinayak multispeciality hospital icu hospital diva">
+      <div class="photo"><img src="assets/hospital-diva.jpg" alt="Shree Siddhivinayak Multispeciality Hospital and ICU"></div>
+      <div class="card-body">
+        <div class="card-head"><span class="icon health">🏥</span><span class="type">Healthcare</span></div>
+        <h3>Shree Siddhivinayak Multispeciality Hospital & ICU</h3>
+        <p class="place">📍 Diva, Thane, Maharashtra</p>
+        <p class="desc">Multispeciality healthcare facility documented during the field survey.</p>
+        <div class="details"><span>🕒 Mon–Sun: 9:00 AM–5:00 PM</span></div>
+        <a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Shree+Siddhivinayak+Multispeciality+Hospital+ICU+Diva+Thane">📍 Open in Google Maps <small>Directions ↗</small></a>
+      </div>
+    </article>
+
+    <article class="service-card" data-category="health" data-search="metro hospital icu general surgical maternity childcare diva">
+      <div class="photo"><img src="assets/metro-hospital.png" alt="Metro Hospital and ICU Diva"></div>
+      <div class="card-body">
+        <div class="card-head"><span class="icon health">🏥</span><span class="type">Healthcare</span></div>
+        <h3>Metro Hospital & ICU</h3>
+        <p class="place">📍 Diva, Thane, Maharashtra 400612</p>
+        <p class="desc">General, surgical, maternity and childcare hospital documented in the field survey.</p>
+        <div class="details"><span>📍 Opp. Mayur Hotel, Diva-Agasan Road</span></div>
+        <a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Metro+Hospital+ICU+Diva+Thane+Maharashtra+400612">📍 Open in Google Maps <small>Directions ↗</small></a>
+      </div>
+    </article>
+
+    <article class="service-card" data-category="police" data-search="diva police station chowki maharashtra police">
+      <div class="photo"><img src="assets/diva-police-station.jpg" alt="Diva Police Station"></div>
+      <div class="card-body">
+        <div class="card-head"><span class="icon police">👮</span><span class="type">Police</span></div>
+        <h3>Diva Police Station / Chowki</h3>
+        <p class="place">📍 Diva, Thane, Maharashtra</p>
+        <p class="desc">Police facility photographed during the community field survey.</p>
+        <div class="details"><span>📞 Contact: To be added</span></div>
+        <a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Diva+Police+Station+Thane+Maharashtra">📍 Open in Google Maps <small>Directions ↗</small></a>
+      </div>
+    </article>
+
+    <article class="service-card" data-category="education" data-search="st mary primary secondary school convent diva">
+      <div class="photo"><img src="assets/st-mary-school.png" alt="St Mary School Diva"></div>
+      <div class="card-body">
+        <div class="card-head"><span class="icon school">🏫</span><span class="type">Education</span></div>
+        <h3>St. Mary Primary & Secondary School</h3>
+        <p class="place">📍 Mumbra Devi Colony Road, Diva, Thane 400612</p>
+        <p class="desc">School facility documented during the local field survey.</p>
+        <div class="details"><span>📞 Contact: To be added</span></div>
+        <a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=St+Mary+Primary+Secondary+School+Diva+Thane+400612">📍 Open in Google Maps <small>Directions ↗</small></a>
+      </div>
+    </article>
+
+    <article class="service-card" data-category="community" data-search="garden park siddhivinayak garden diva community">
+      <div class="photo"><img src="assets/diva-garden.png" alt="Garden in Diva"></div>
+      <div class="card-body">
+        <div class="card-head"><span class="icon community">🌳</span><span class="type">Community</span></div>
+        <h3>Siddhivinayak Garden / Community Garden</h3>
+        <p class="place">📍 Sabe Gaon, Diva, Thane 400612</p>
+        <p class="desc">Green and recreational community space photographed during the survey.</p>
+        <div class="details"><span>🌿 Public/community recreation area</span></div>
+        <a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Siddhivinayak+Garden+CHS+Sabe+Gaon+Diva+Thane+400612">📍 Open in Google Maps <small>Directions ↗</small></a>
+      </div>
+    </article>
+
+    <article class="service-card" data-category="health" data-search="om medical general store pharmacy medicine diva">
+      <div class="photo"><img src="assets/om-medical.png" alt="Om Medical and General Store Diva"></div>
+      <div class="card-body">
+        <div class="card-head"><span class="icon medical">💊</span><span class="type">Medical</span></div>
+        <h3>Om Medical & General Store</h3>
+        <p class="place">📍 Diva, Thane, Maharashtra</p>
+        <p class="desc">Medical and general store photographed during the local survey.</p>
+        <div class="details"><span>📞 Phone: 9769361832</span></div>
+        <a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Om+Medical+General+Store+Diva+Thane+Maharashtra+400612">📍 Open in Google Maps <small>Directions ↗</small></a>
+      </div>
+    </article>
+
+    <article class="service-card" data-category="government" data-search="public toilet diva railway station toilet">
+      <div class="photo"><img src="assets/public-toilet-diva.png" alt="Public toilet facility near Diva railway station"></div>
+      <div class="card-body">
+        <div class="card-head"><span class="icon government">🚻</span><span class="type">Public Facility</span></div>
+        <h3>Public Toilet – Diva Railway Station Area</h3>
+        <p class="place">📍 Diva, Thane, Maharashtra</p>
+        <p class="desc">Public sanitation facility documented during the community survey.</p>
+        <div class="details"><span>🚉 Near Diva railway station area</span></div>
+        <a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=public+toilet+Diva+Railway+Station+Thane+Maharashtra">📍 Open in Google Maps <small>Directions ↗</small></a>
+      </div>
+    </article>
+
+    <article class="service-card" data-category="government" data-search="diva post office india post government postal">
+      <div class="photo"><img src="assets/diva-post-office.jpg" alt="Diva Post Office"></div>
+      <div class="card-body">
+        <div class="card-head"><span class="icon government">🏤</span><span class="type">Government</span></div>
+        <h3>Diva Post Office</h3>
+        <p class="place">📍 Near Warekar School, Diva, Thane 400612</p>
+        <p class="desc">Postal service facility photographed as part of the field survey.</p>
+        <div class="details"><span>📞 1800 11 2011</span><span>🕒 Mon–Sat: 11:00 AM–2:00 PM</span></div>
+        <a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Diva+Post+Office+Near+Warekar+School+Thane+400612">📍 Open in Google Maps <small>Directions ↗</small></a>
+      </div>
+    </article>
+
+    <article class="service-card placeholder-card" data-category="health" data-search="balaji hospital healthcare diva">
+      <div class="placeholder-photo">🏥</div>
+      <div class="card-body">
+        <div class="card-head"><span class="icon health">🏥</span><span class="type">Healthcare</span></div>
+        <h3>Balaji Hospital</h3>
+        <p class="place">📍 Diva, Thane, Maharashtra</p>
+        <p class="desc">Healthcare facility recorded for the directory. Photo and exact details can be added after verification.</p>
+        <div class="details"><span>📞 Phone: To be added</span></div>
+        <a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Balaji+Hospital+Diva+Thane+Maharashtra">📍 Open in Google Maps <small>Directions ↗</small></a>
+      </div>
+    </article>
+
+  </section>
+
+  <div class="empty" id="empty"><div>🔎</div><h3>No matching service</h3><p>Try another search or category.</p></div>
+
+  <section class="survey" id="survey">
+    <div class="survey-heading">
+      <div><span class="section-kicker">FIELD SURVEY</span><h2>Our observations from Diva</h2></div>
+      <p>Photographs supplied from the community engagement field survey.</p>
+    </div>
+    <div class="gallery">
+      <figure><img src="assets/hospital-diva.jpg" alt="Siddhivinayak Multispeciality Hospital"><figcaption><strong>01</strong><span>Siddhivinayak Multispeciality Hospital</span></figcaption></figure>
+      <figure><img src="assets/metro-hospital.png" alt="Metro Hospital"><figcaption><strong>02</strong><span>Metro Hospital & ICU</span></figcaption></figure>
+      <figure><img src="assets/diva-police-station.jpg" alt="Diva Police Facility"><figcaption><strong>03</strong><span>Diva Police Facility</span></figcaption></figure>
+      <figure><img src="assets/st-mary-school.png" alt="St Mary School"><figcaption><strong>04</strong><span>St. Mary School</span></figcaption></figure>
+      <figure><img src="assets/diva-garden.png" alt="Diva Garden"><figcaption><strong>05</strong><span>Community Garden</span></figcaption></figure>
+      <figure><img src="assets/om-medical.png" alt="Om Medical and General Store"><figcaption><strong>06</strong><span>Om Medical & General Store</span></figcaption></figure>
+      <figure><img src="assets/public-toilet-diva.png" alt="Public Toilet Diva"><figcaption><strong>07</strong><span>Public Toilet Facility</span></figcaption></figure>
+      <figure><img src="assets/diva-post-office.jpg" alt="Diva Post Office"><figcaption><strong>08</strong><span>Diva Post Office</span></figcaption></figure>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div><span class="section-kicker">ABOUT THE PROJECT</span><h2>Making local information easier to discover.</h2></div>
+    <div class="about-copy">
+      <p>This Community Engagement Project documents essential facilities in Diva and presents the information in a simple digital directory with direct Google Maps search links.</p>
+      <div class="about-points"><span>✓ Field observation</span><span>✓ Local service mapping</span><span>✓ Easy digital access</span></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div><strong>Diva Services</strong><span>Community Engagement Project</span></div>
+  <span>© 2026 · Diva, Thane, Maharashtra</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
